@@ -1,5 +1,14 @@
 allprojects {
-	    apply plugin: 'java'
+     apply plugin: 'java'
+     apply plugin: 'eclipse'
+     
+     repositories {
+         mavenCentral()
+     }
+
+     dependencies {
+         testCompile 'junit:junit:4.11'
+     }
 }
 
 task wrapper(type: Wrapper) {
